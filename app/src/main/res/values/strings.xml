@@ -1,0 +1,193 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+    <!--             change this values in each update          -->
+    <string name="about_app_version_number">1.0 (July 30, 2018)</string>
+    <!-- =====================================================  -->
+    <!--                    application name                    -->
+    <string name="app_name">Quiz App</string>
+    <!-- =====================================================  -->
+    <!--                        titles                          -->
+    <string name="store">Store</string>
+    <string name="options">Options</string>
+    <string name="game_modes">Game modes</string>
+    <string name="statistics">Statistics</string>
+    <string name="encyclopedia">Encyclopedia</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <!-- =====================================================  -->
+    <!--                    store activity                      -->
+    <string name="limited_offers_title">These items can only be purchased once</string>
+    <string name="unlimited_offers_title">Other items</string>
+    <string name="buy_remove_advertisement">Remove ads</string>
+    <string name="remove_advertisement_description">Remove ads + %1$s coins</string>
+    <string name="buy_premium">Premium account</string>
+    <string name="premium_description">1) No advertising;\n2) Free hints;\n3) Game modes are unlocked;\n4) Free bonuses in game modes;\n5) My respect.</string>
+    <string name="buy">buy</string>
+    <string name="buy_coins">Buy %1$s coins</string>
+    <string name="watch_video">Watch the video and get %1$s coins</string>
+    <!-- =====================================================  -->
+    <!--                    game modes                          -->
+    <string name="game_mode_time_challenge">Time challenge</string>
+    <string name="game_mode_yes_or_no">Yes or no?</string>
+    <string name="game_mode_find_the_pairs">Find the pairs</string>
+    <string name="game_mode_normal_game">Normal game</string>
+    <string name="are_you_ready">Are you ready?</string>
+    <!-- =====================================================  -->
+    <!--                    options activity                    -->
+    <string name="options_play_game_services">Play games</string>
+    <string name="options_play_game_services_on">Enter at startup</string>
+    <string name="options_play_game_services_off">Disabled</string>
+    <string name="options_sound">Sound</string>
+    <string name="options_volume_on">On</string>
+    <string name="options_volume_off">Off</string>
+    <string name="options_reset">Reset the game</string>
+    <string name="options_mail">Contact us</string>
+    <string name="options_rate">Rate app</string>
+    <string name="options_about_app">About app</string>
+    <string name="options_change_language">Change language</string>
+    <string name="options_more_apps">More apps</string>
+    <!-- =====================================================  -->
+    <!--                    encyclopedia activity               -->
+    <string name="encyclopedia_no_levels">Levels passed: 0</string>
+    <!-- =====================================================  -->
+    <!--                    statistics activity                 -->
+    <string name="statistic_games_count">Games played:\u0020</string>
+    <string name="statistic_average_score">Average points:\u0020</string>
+    <string name="statistic_num_of_levels">Levels passed:\u0020</string>
+    <string name="statistic_answers_without_mistakes">Fault-free answers (the number of answers correctly entered the first time):\u0020</string>
+    <string name="statistic_answers_without_hints">Passed levels without using hints:\u0020</string>
+    <string name="statistic_num_of_used_hints">Number of used hints\u0020</string>
+    <string name="statistic_description_without_mistakes">Without mistakes</string>
+    <string name="statistic_description_with_mistakes">With mistakes</string>
+    <string name="statistic_description_without_hints">Without hints</string>
+    <string name="statistic_description_with_hints">With hints</string>
+    <!-- =====================================================  -->
+    <!--               privacy policy fragment                  -->
+    <string name="agree_and_continue">Agree and continue</string>
+    <string name="message_privacy_policy">Tap “Agree and continue” to accept the Privacy Policy</string>
+    <string name="message_privacy_policy_link">&lt;a href="https://mudrichenko.wordpress.com/csgoplayersquiz-privacy-policy/">Privacy Policy&lt;/a></string>
+    <!-- =====================================================  -->
+    <!--                    welcome fragment                    -->
+    <string name="welcome_fragment_title">Welcome!</string>
+    <string name="welcome_fragment_text_1">In the normal game you can use hints:</string>
+    <string name="welcome_fragment_text_2">Also you can ask for help from a friend</string>
+    <string name="welcome_fragment_text_3">And don`t forget about special offers in our store!</string>
+    <string name="welcome_fragment_text_4">Do you want to log in to the “Play Games” to participate in the ranking of players?</string>
+    <!-- =====================================================  -->
+    <!--                about game modes fragment               -->
+    <string name="about_game_modes_fragment_text_1">Several additional game modes are available:</string>
+    <string name="about_game_modes_fragment_text_2">A simple game with yes/no answers. You lose all of your points for wrong answer.</string>
+    <string name="about_game_modes_fragment_text_3">A game in which you need to answer the questions as quickly as possible.</string>
+    <string name="about_game_modes_fragment_text_4">A game mode, where you have to match up the images with the correct words.</string>
+    <string name="about_game_modes_fragment_text_5">More information about this mode can be found in the tutorial</string>
+    <!-- =====================================================  -->
+    <!--                        tutorial                        -->
+    <string name="tutorial">Tutorial</string>
+    <string name="tutorial_message_1">Let`s start. Click on the first button with the text</string>
+    <string name="tutorial_message_2">Now find the correct image on the left side of the screen.</string>
+    <string name="tutorial_message_3">Excellent! Let`s check our answer. Click on the “%1$s” button at the bottom of the screen.</string>
+    <string name="tutorial_message_4">Correctly! Find a few more pairs. There is a penalty for wrong answer.</string>
+    <string name="tutorial_end_message">Congratulations! You passed the tutorial!</string>
+    <!-- =====================================================  -->
+    <!--                    about app fragment                  -->
+    <string name="about_app_version">Version:</string>
+    <string name="about_app_fragment_creator_name">Mudrichenko Evgeniy</string>
+    <string name="about_app_fragment_content_maker">Content:</string>
+    <string name="about_app_fragment_content_maker_name">Mudrichenko Evgeniy</string>
+    <string name="about_app_fragment_mail_title">E-mail:</string>
+    <!-- =====================================================  -->
+    <!--                        game modes                      -->
+    <string name="about_game_modes">About game modes</string>
+    <string name="message_fragment_text_game_modes_few_level_passed">To access other game modes you need to pass at least %1$s levels in the normal game mode. But you can unlock other game modes right now for %2$s coins</string>
+    <string name="message_fragment_text_game_modes_few_level_passed_btn_unlock">unlock</string>
+    <string name="message_fragment_text_game_modes_few_level_passed_btn_more_info">more info</string>
+    <string name="game_modes_left">remaining: %1$s</string>
+    <string name="game_modes_bonus_title">Use the bonus?</string>
+    <string name="game_modes_bonus_message">For only %1$s coins you will get extra time, which will increase your chances of setting a new high score!</string>
+    <string name="game_modes_new_high_score">New high score!</string>
+    <string name="game_modes_fragment_btn_new_game">new game</string>
+    <!-- =====================================================  -->
+    <!--                        find the pairs                  -->
+    <string name="find_the_pairs_penalty">PENALTY</string>
+    <!-- =====================================================  -->
+    <!--                        game activity                   -->
+    <string name="text_level">%1$s level</string>
+    <string name="game_activity_question">Country</string>
+    <!-- =====================================================  -->
+    <!--                        ask friend                      -->
+    <string name="ask_friend_title">Ask a friend</string>
+    <string name="ask_friend_text">Tell me the answer, please (\u0020</string>
+    <!-- =====================================================  -->
+    <!--                        rate us                         -->
+    <string name="message_fragment_title_rate_us">Dear user!</string>
+    <string name="message_fragment_text_rate_us">Please, rate our app! This will help in the development of the game!</string>
+    <string name="message_fragment_btn_rate">rate</string>
+    <string name="message_rate_us_mail_client_chooser_message">send mail</string>
+    <string name="message_rate_us_mail_message">Describe what you do not like in this mobile app</string>
+    <!-- =====================================================  -->
+    <!--                    share application                   -->
+    <string name="share_app_text">Do you know all Countries?\u0020</string>
+    <string name="message_fragment_text_share_app">But you can get coins as a gift right now! Just tell your friends about this game!</string>
+    <string name="message_fragment_title_refuse_share_app">Are you sure?</string>
+    <string name="message_fragment_text_refuse_share_app">You refuse the gift?</string>
+    <string name="share_app_title">Tell your friend</string>
+    <string name="message_fragment_btn_share">share</string>
+    <!-- =====================================================  -->
+    <!--                        advertisement                   -->
+    <string name="message_fragment_title_advertisement_not_loaded">The ad did not load</string>
+    <string name="message_fragment_text_advertisement_not_loaded">Viewing advertising banners gives you an extra coins</string>
+    <string name="message_fragment_text_watch_video_offer">You can now get %1$s coins! Just watch the video!</string>
+    <string name="message_fragment_btn_watch_video">get!</string>
+    <string name="message_fragment_text_video_not_loaded">Sorry, there are currently no videos available for viewing.</string>
+    <!-- =====================================================  -->
+    <!--                            end game                    -->
+    <string name="end_game_fragment_title">You completed the game!</string>
+    <string name="message_fragment_text_game_already_completed">Game already passed! But you can reset the game in options and start a new game</string>
+    <!-- =====================================================  -->
+    <!--                          reset game                    -->
+    <string name="message_fragment_text_reset_game_progress">Do you really want to reset the progress of the game? The number of your coins will not change. The game will start from the first level. Coins will be given only for those levels that you have not passed before</string>
+    <!-- =====================================================  -->
+    <!--                 no internet connection                 -->
+    <string name="message_fragment_text_internet_connection_problem">No Internet connection available</string>
+    <!-- =====================================================  -->
+    <!--                        other                           -->
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="btn_exit">exit</string>
+    <string name="message_fragment_btn_close">close</string>
+    <string name="message_fragment_btn_later">later</string>
+    <string name="message_fragment_btn_refuse">refuse</string>
+    <string name="message_fragment_title_error">Error</string>
+    <string name="message_fragment_title_warning">Attention!</string>
+    <string name="check">check</string>
+    <string name="data_error">Data Error!</string>
+    <string name="not_enough_coins">Not enough coins</string>
+    <string name="high_score">High score:\u0020</string>
+    <string name="score">score:\u0020</string>
+    <string name="start">start</string>
+    <string name="plus_bonus">\u0020+bonus</string>
+    <string name="insert_letter">“Insert a letter into a random place”</string>
+    <string name="remove_letters">“Remove incorrect letters”</string>
+    <string name="try_again_later">Please try again later</string>
+    <string name="author">Author:</string>
+    <string name="personalized_ads">Ads Personalization</string>
+
+    <string name="level_info_btn_text">NEXT</string>
+    <!-- =====================================================  -->
+    <!--                    publisher name                     -->
+    <string name="publisher_name">Mudrichenko Evgeniy</string>
+    <!-- =====================================================  -->
+    <!--                    privacy policy                      -->
+    <string name="privacy_policy_link">https://mudrichenko.wordpress.com/csgoplayersquiz-privacy-policy/</string>
+    <!-- =====================================================  -->
+    <!--                    mail for feedback                   -->
+    <string name="email_feedback">mudrichenko.feedback@gmail.com</string>
+    <!-- =====================================================  -->
+    <!--            text is the same for all localizations      -->
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
+    <string name="no_price">-</string>
+    <string name="message_rate_us_mail_title_2">/5</string>
+    <string name="text_screenshot">level_</string>
+    <string name="image_source">Source</string>
+    <!-- =====================================================  -->
+</resources>

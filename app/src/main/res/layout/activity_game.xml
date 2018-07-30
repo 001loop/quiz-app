@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loop.quizapp.GameActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            android:contentDescription="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/activity_background_shape"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_background"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/top_layout_padding">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_layout_button_back_size"
+            android:layout_height="@dimen/top_layout_button_back_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_button_back"
+            android:contentDescription="@null"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text_view_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_layout_coin_size"
+            android:layout_marginLeft="@dimen/top_layout_text_margin"
+            android:layout_marginRight="@dimen/top_layout_text_margin"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:gravity="center"
+            app:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            android:textColor="@color/textOnTopLayout"/>
+
+        <TextView
+            android:id="@+id/text_view_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/image_view_coin"
+            android:layout_toStartOf="@+id/image_view_coin"
+            android:textSize="@dimen/top_layout_coins_font_size"
+            android:textColor="@color/textOnTopLayout"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/image_view_coin"
+            android:layout_width="@dimen/top_layout_coin_size"
+            android:layout_height="@dimen/top_layout_coin_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/top_layout_coin_left_margin"
+            android:layout_marginStart="@dimen/top_layout_coin_left_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_coin"
+            android:contentDescription="@null"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btns_and_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_ask_friend_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/quiz_image_text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_toLeftOf="@+id/btn_store_container"
+            android:layout_toStartOf="@+id/btn_store_container"
+            android:layout_toRightOf="@+id/btn_ask_friend_container"
+            android:layout_toEndOf="@+id/btn_ask_friend_container"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/btn_store_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_answer_container"
+        android:layout_below="@+id/btns_and_text_layout"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_answer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hint_buttons_layout"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layoutDirection="ltr"
+        tools:ignore="UnusedAttribute"/>
+
+    <LinearLayout
+        android:id="@+id/hint_buttons_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_chars_container"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layoutDirection="ltr"
+        tools:ignore="UnusedAttribute">
+
+        <LinearLayout
+            android:id="@+id/btn_left_hint_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/hints_buttons_between_half_margin"
+            android:layout_marginEnd="@dimen/hints_buttons_between_half_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/btn_right_hint_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hints_buttons_between_half_margin"
+            android:layout_marginStart="@dimen/hints_buttons_between_half_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_chars_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layoutDirection="ltr"
+        tools:ignore="UnusedAttribute"/>
+
+</RelativeLayout>

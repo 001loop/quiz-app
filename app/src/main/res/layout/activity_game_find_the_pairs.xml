@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loop.quizapp.GameFindThePairsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            android:contentDescription="@null"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/activity_background_shape"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/time_challenge_top_layout_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_background"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/top_layout_padding">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/top_layout_button_back_size"
+            android:layout_height="@dimen/top_layout_button_back_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_button_back"
+            android:contentDescription="@null"/>
+
+        <ImageView
+            android:id="@+id/image_view_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_clock"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:textSize="@dimen/top_layout_font_size"
+            android:textColor="@color/textOnTopLayout"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_time"
+        android:progressDrawable="@drawable/progress_bar_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/time_challenge_progress_bar_height"
+        android:layout_below="@+id/layout_top"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_answers_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/time_challenge_answer_layout_height"
+        android:clipToPadding="false"
+        android:background="@color/gameModesAnswerInfoBackground"
+        android:layout_below="@+id/progress_bar_time"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/buttons_answers_margin"
+        android:padding="@dimen/top_layout_padding">
+        <TextView
+            android:id="@+id/text_view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:textSize="@dimen/time_challenge_answer_info_text_size"
+            android:textColor="@color/textInGameModesAnswerInfo"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/buttons_container"
+        android:layout_below="@+id/layout_answers_info"
+        android:layout_centerVertical="true"
+        android:layoutDirection="ltr"
+        tools:ignore="UnusedAttribute">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/buttons_answers_margin">
+        <Button
+            android:id="@+id/btn_answer_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:minHeight="@dimen/game_activity_hint_button_height"
+            android:background="@drawable/shape_time_challenge_button_view"
+            android:textColor="@color/textInsideGameModesButton"
+            android:padding="@dimen/button_view_text_margin"
+            android:layout_marginRight="@dimen/buttons_answers_between_half_margin"
+            android:layout_marginEnd="@dimen/buttons_answers_between_half_margin"
+            android:textSize="@dimen/message_fragment_text_size_small"
+            android:text="@string/check"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

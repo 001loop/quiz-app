@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="missingPrefix"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    tools:context="com.loop.quizapp.PenaltyFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_outside_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/messageFragmentOutsideBackground"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_inside_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fragment_inside_margin"
+        android:background="@drawable/shape_message_fragment_background"
+        android:orientation="vertical"
+        android:padding="@dimen/fragment_inside_padding">
+
+        <LinearLayout
+            android:id="@+id/text_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/textInMessageFragment"
+                    android:text="@string/find_the_pairs_penalty"
+                    app:autoSizeTextType="uniform"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/penalty_progress_bar"
+                android:background="@drawable/penalty_progress_bar_background"
+                style="?android:attr/progressBarStyleHorizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_view_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textInMessageFragment"
+                    app:autoSizeTextType="uniform"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

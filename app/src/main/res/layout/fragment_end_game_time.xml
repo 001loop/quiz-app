@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context="com.loop.quizapp.EndGameTimeFragment">
+
+    <LinearLayout
+        android:id="@+id/fragment_outside_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/messageFragmentOutsideBackground"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_inside_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fragment_inside_margin"
+        android:background="@drawable/shape_message_fragment_background"
+        android:orientation="vertical"
+        android:padding="@dimen/fragment_inside_padding">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fragment_text_high_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/fragment_between_elements_margin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/high_score"
+                    android:textColor="@color/textInMessageFragment"
+                    android:textSize="@dimen/message_fragment_title_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/layout_your_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_text_high_score"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/score"
+                        android:textColor="@color/textInMessageFragment"
+                        android:textSize="@dimen/message_fragment_title_text_size" />
+
+                    <TextView
+                        android:id="@+id/fragment_text_your_score_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/textInMessageFragment"
+                        android:textSize="@dimen/message_fragment_title_text_size" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_score"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/time_challenge_progress_bar_height"
+                    android:layout_below="@+id/layout_your_score"
+                    android:layout_marginTop="@dimen/fragment_between_elements_margin"
+                    android:progressDrawable="@drawable/end_game_progress_bar_score" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fragment_between_elements_margin"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+</FrameLayout>

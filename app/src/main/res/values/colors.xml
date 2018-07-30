@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--                    text view                   -->
+    <color name="textOnActivityBackground">#000000</color>
+    <color name="textOnPlayVideoBackground">#000000</color>
+    <color name="textOnMpChartsBackground">#000000</color>
+    <color name="textOnTopLayout">#000000</color>
+    <color name="textInCell">#000000</color>
+    <color name="textInsideButton">#000000</color>
+    <color name="textInsideGameModesButton">#000000</color>
+    <color name="textInMessageFragment">#000000</color>
+    <color name="textInGameModesAnswerInfo">#FFFAFA</color>
+    <color name="textFindThePairsTextPickerTextColor">#000000</color>
+    <color name="textInEncyclopediaLevelCell">#000000</color>
+    <color name="textShadowInEncyclopediaLevelCell">#FFFFFF</color>
+    <color name="textLink">#029787</color>
+    <!--            encyclopedia activity              -->
+    <color name="encyclopediaLevelCellForeground">#66D9E4E5</color>
+    <color name="encyclopediaSpinnerBackground">#D4EEFB</color>
+    <!--                game activity                   -->
+    <color name="cellBorder">#000000</color>
+    <color name="cellBorderLocked">#CC3333</color>
+    <color name="cellWithoutCharBackground">#D9E4E5</color>
+    <color name="cellWithCharBackground">#728EA6</color>
+    <!--            game time challenge activity        -->
+    <color name="progressBarBackground">#22CCCCCC</color>
+    <color name="progressBarScoreProgress">#22AA22</color>
+    <color name="progressBarScoreSecondaryProgress">#FAAC00</color>
+    <color name="gameModesAnswerInfoBackground">#DD2E2E2E</color>
+    <color name="gameModesTextAnswersCount">#FFFFFF</color>
+    <color name="gameModesClock">#B22A29</color>
+    <!--            game find the pairs activity        -->
+    <color name="findThePairsPickedItemForeground">#66D9E4E5</color>
+    <color name="findThePairsPickedItemBorderImage">#EE728EA6</color>
+    <color name="findThePairsPickedItemBorderText">#728EA6</color>
+    <color name="findThePairsTextItemBackground">#829EB6</color>
+    <color name="findThePairsPenaltyProgressBarBackground">#DD3333</color>
+    <color name="findThePairsPenaltyProgressBar">#33DD33</color>
+    <!--                    tutorial                    -->
+    <color name="glareCenter">#55FFFFFF</color>
+    <color name="glareStartEnd">#00FFFFFF</color>
+    <!--                store activity                  -->
+    <color name="playVideoBackground">#4477A9D1</color>
+    <!--                statistic activity              -->
+    <color name="pieChartMainColor">#DD3333</color>
+    <color name="pieChartFirstColor">#33DD33</color>
+    <!--                    buttons                     -->
+    <color name="buttonBackgroundStart">#73879F</color>
+    <color name="buttonBackgroundEnd">#8397AF</color>
+    <color name="buttonNonClickableBackgroundStart">#55627E96</color>
+    <color name="buttonNonClickableBackgroundEnd">#55A6C8EB</color>
+    <color name="gameModesNormalButtonStart">#73879F</color>
+    <color name="gameModesNormalButtonEnd">#8397AF</color>
+    <color name="gameModesCorrectButtonStart">#22AA22</color>
+    <color name="gameModesCorrectButtonEnd">#229922</color>
+    <color name="gameModesIncorrectButtonStart">#DD3333</color>
+    <color name="gameModesIncorrectButtonEnd">#BB3333</color>
+    <!--                all activities                  -->
+    <color name="headerBackgroundStart">#73879F</color>
+    <color name="headerBackgroundEnd">#00FFFFFF</color>
+    <color name="activityBackgroundStart">#F9D4EEFB</color>
+    <color name="activityBackgroundEnd">#E9C9EDF3</color>
+    <!--                 fragments                       -->
+    <color name="messageFragmentStroke">#EE728EA6</color>
+    <color name="messageFragmentOutsideBackground">#D4EEFB</color>
+    <color name="messageFragmentBackgroundStart">#B4CEDB</color>
+    <color name="messageFragmentBackgroundEnd">#B9CDD3</color>
+    <!--                    other                        -->
+    <color name="icon">#000000</color>
+    <color name="transparency">#00000000</color>
+	<color name="ratingBarBackgroundColor">#AA111111</color>
+    <color name="ratingBarColor">#FFAA00</color>
+</resources>

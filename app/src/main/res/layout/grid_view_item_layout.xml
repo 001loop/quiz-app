@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.loop.quizapp.GridViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_background_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable = "false">
+    <ImageView
+        android:id="@+id/item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/grid_view_item_text_size"
+        android:textColor="@color/textInCell"
+        android:layout_centerInParent="true">
+    </TextView>
+    <ImageView
+        android:id="@+id/item_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+</com.loop.quizapp.GridViewItem>

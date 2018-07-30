@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn"
+    android:orientation="vertical"
+    android:background="@drawable/shape_button_view"
+    android:layout_width="@dimen/button_size"
+    android:layout_height="@dimen/button_size">
+    <ImageView
+        android:id="@+id/btn_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+    <TextView
+        android:id="@+id/btn_text"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_view_text_margin"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/textInsideButton"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+</RelativeLayout>

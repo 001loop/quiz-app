@@ -1,0 +1,105 @@
+<resources>
+    <!-- message fragments -->
+    <dimen name="fragment_inside_margin">15dp</dimen>
+    <dimen name="fragment_inside_padding">15dp</dimen>
+    <dimen name="fragment_between_elements_margin">16dp</dimen>
+    <dimen name="fragment_background_radius">25dp</dimen>
+    <dimen name="fragment_background_border_width">3dp</dimen>
+    <dimen name="fragment_btn_horizontal_margin">5dp</dimen>
+    <dimen name="fragment_button_size">40dp</dimen>
+    <dimen name="message_fragment_title_text_size">18sp</dimen>
+    <dimen name="message_fragment_btn_text_size">16sp</dimen>
+    <dimen name="message_fragment_text_size_small">14sp</dimen>
+
+    <!--     view button main activity    -->
+    <dimen name="view_button_main_activity_text_vertical_margin">4dp</dimen>
+
+    <!--     activities    -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_vertical_margin">6dp</dimen>
+
+    <!--     top layout    -->
+    <dimen name="top_layout_padding">3dp</dimen>
+    <dimen name="top_layout_coin_left_margin">4dp</dimen>
+    <dimen name="top_layout_coin_size">25dp</dimen>
+    <dimen name="top_layout_button_back_size">30dp</dimen>
+    <dimen name="top_layout_text_margin">65dp</dimen>
+    <dimen name="top_layout_font_size">20sp</dimen>
+    <dimen name="top_layout_coins_font_size">25sp</dimen>
+
+    <!--      gridView       -->
+    <dimen name="grid_view_item_horizontal_margin">3dp</dimen>
+    <dimen name="grid_view_vertical_margin">3dp</dimen>
+    <dimen name="grid_view_item_text_size">16sp</dimen>
+    <dimen name="grid_view_item_text_size_small">12sp</dimen>
+
+    <!--     game activity    -->
+    <dimen name="hints_buttons_between_half_margin">8dp</dimen>
+    <dimen name="game_activity_image_quiz_font_size">18sp</dimen>
+    <dimen name="game_activity_quiz_font_size">20sp</dimen>
+    <dimen name="game_activity_quiz_text_view_vertical_margin">25dp</dimen>
+    <dimen name="game_activity_hint_button_width">80dp</dimen>
+    <dimen name="game_activity_hint_button_height">40dp</dimen>
+    <dimen name="game_activity_button_size">40dp</dimen>
+
+    <!--     game time challenge activity    -->
+    <!-- = hints_buttons_between_half_margin / 2 -->
+    <dimen name="buttons_answers_between_half_margin">4dp</dimen>
+    <!-- = hints_buttons_between_half_margin-->
+    <dimen name="buttons_answers_margin">8dp</dimen>
+    <!-- = button_view_radius / 1.6-->
+    <dimen name="time_challenge_button_view_radius">6dp</dimen>
+    <!-- = game_activity_button_size / 2.5-->
+    <dimen name="time_challenge_progress_bar_height">16dp</dimen>
+    <!-- = top_layout_padding*2 + top_layout_button_back_size-->
+    <dimen name="time_challenge_top_layout_height">36dp</dimen>
+    <!-- time_challenge_progress_bar_height * 1.5 -->
+    <dimen name="time_challenge_answer_layout_height">24dp</dimen>
+    <!-- message_fragment_text_size_small -->
+    <dimen name="time_challenge_answer_info_text_size">14sp</dimen>
+
+    <!--     main activity    -->
+    <dimen name="main_menu_buttons_bottom_margin">8dp</dimen>
+    <!-- = main_menu_buttons_bottom_margin * 2-->
+    <dimen name="main_menu_buttons_margin">16dp</dimen>
+    <dimen name="main_menu_buttons_layout_margin">20dp</dimen>
+
+    <!--     statistic activity    -->
+    <!-- = fragment_between_elements_margin / 4-->
+    <dimen name="statistic_activity_small_margin">4dp</dimen>
+    <!-- = statistic_activity_small_margin * 3-->
+    <dimen name="statistic_activity_high_margin">12dp</dimen>
+
+    <!--    encyclopedia activity   -->
+    <!-- grid_view_vertical_margin * 2 -->
+    <dimen name="encyclopedia_activity_grid_view_padding">6dp</dimen>
+    <!-- grid_view_vertical_margin * 2 -->
+    <dimen name="encyclopedia_grid_view_item_horizontal_margin">6dp</dimen>
+    <!-- grid_view_vertical_margin * 2 -->
+    <dimen name="encyclopedia_grid_view_vertical_margin">6dp</dimen>
+    <!-- encyclopedia_grid_view_vertical_margin / 3 -->
+    <dimen name="item_text_margin">2dp</dimen>
+
+    <!--     button view      -->
+    <dimen name="button_view_radius">10dp</dimen>
+    <dimen name="button_size">58dp</dimen>
+    <dimen name="button_view_text_margin">5dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <!-- = button_size-->
+    <dimen name="button_main_activity_height">58dp</dimen>
+
+    <!--        others        -->
+    <!-- activity_vertical_margin * 1.5 -->
+    <dimen name="padding_item">7dp</dimen>
+    <!-- message_fragment_title_text_size -->
+    <dimen name="item_text_size">20sp</dimen>
+    <dimen name="pie_chart_size">160dp</dimen>
+
+    <!-- app exclusive -->
+    <!-- top_layout_button_back_size -->
+    <dimen name="fragment_level_info_icon_size">30dp</dimen>
+    <!-- button_size -->
+    <dimen name="fragment_level_info_achievement_size">58dp</dimen>
+    <!-- buttons_answers_between_half_margin -->
+    <dimen name="time_challenge_answer_info_image_vertical_margin">4dp</dimen>
+</resources>
